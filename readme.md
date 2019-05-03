@@ -1,6 +1,8 @@
 ## Research and Planning log
 
-8:00am
--Begin reading Expo and React Native Documentation.
-8:30am
--Create demo project and view project on phone with React Native and Expo
+
+|Time|Work/Research done|
+|---|--------|
+|8:00am|Begin reading React Native documentation.|
+|8:30am|Following the tutorial in the React Native documentation, create demo project using Expo CLI and view project on phone via Expo App.|
+|9:00am|Begin reading Expo documentation.|
