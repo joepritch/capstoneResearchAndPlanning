@@ -6,6 +6,7 @@ export default class Score extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.text}>Current Score: {this.props.currentScore}</Text>
+        <Text style={styles.text}>Possible Score: {this.props.possibleScore}</Text>
         <Text style={styles.text}>High-Score: {this.props.highScore}</Text>
       </View>
     );
