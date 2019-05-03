@@ -5,7 +5,6 @@ export default class Simon extends React.Component {
   render(props) {
     return (
       <View style={[styles.container, {backgroundColor: this.props.SimonsCommand}]}>
-        <Text>{this.props.SimonsCommand}</Text>
       </View>
     );
   }
@@ -13,7 +12,7 @@ export default class Simon extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 50,
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%'

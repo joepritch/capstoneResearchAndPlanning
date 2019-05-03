@@ -2,14 +2,16 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import Simon from './Simon';
 import Buttons from './Buttons';
+import Score from './Score';
 
 export default class App extends React.Component {
 
   constructor(props){
     super(props);
     this.state = {
-      SimonsCommand: 'red',
+      SimonsCommand: '#DB7D45',
       Score: 0,
+      HighScore: 0,
       Lost: false,
     }
     this._handleBlueClicked = this._handleBlueClicked.bind(this);
@@ -20,7 +22,7 @@ export default class App extends React.Component {
   }
 
   _handleBlueClicked(){
-    if (this.state.SimonsCommand === 'blue') {
+    if (this.state.SimonsCommand === '#713493') {
       this.increaseScore();
       this.setNewColor();
     } else {
@@ -29,7 +31,7 @@ export default class App extends React.Component {
   }
 
   _handleRedClicked(){
-    if (this.state.SimonsCommand === 'red') {
+    if (this.state.SimonsCommand === '#DB7D45') {
       this.increaseScore();
       this.setNewColor();
     } else {
@@ -38,7 +40,7 @@ export default class App extends React.Component {
   }
 
   _handleYellowClicked(){
-    if (this.state.SimonsCommand === 'yellow') {
+    if (this.state.SimonsCommand === '#DBDB45') {
       this.increaseScore();
       this.setNewColor();
     } else {
@@ -47,7 +49,7 @@ export default class App extends React.Component {
   }
 
   _handleGreenClicked(){
-    if (this.state.SimonsCommand === 'green') {
+    if (this.state.SimonsCommand === '#2D8F76') {
       this.increaseScore();
       this.setNewColor();
     } else {
@@ -57,6 +59,9 @@ export default class App extends React.Component {
 
   restart(){
     this.setState({Lost: false});
+    if (this.state.Score > this.state.HighScore) {
+      this.setState({HighScore: this.state.Score})
+    }
     this.setState({Score: 0});
   }
 
@@ -68,16 +73,16 @@ export default class App extends React.Component {
     let number = Math.floor(Math.random()*4);
     let newColor = '';
     if (number === 0) {
-      newColor = 'red';
+      newColor = '#DB7D45';
     }
     if (number === 1) {
-      newColor = 'blue';
+      newColor = '#713493';
     }
     if (number === 2) {
-      newColor = 'yellow';
+      newColor = '#DBDB45';
     }
     if (number === 3) {
-      newColor = 'green';
+      newColor = '#2D8F76';
     }
     this.setState({SimonsCommand: newColor})
   }
@@ -87,6 +92,7 @@ export default class App extends React.Component {
       return (
         <View style={styles.container}>
           <Text>You Lost</Text>
+          <Text>Score: {this.state.Score}</Text>
           <Button onPress={this.restart} title="Try Again"/>
         </View>
       )
@@ -94,7 +100,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Simon SimonsCommand={this.state.SimonsCommand}/>
-        <Text>{this.state.Score}</Text>
+        <Score currentScore={this.state.Score} highScore={this.state.HighScore}/>
         <Buttons onBlueClicked={this._handleBlueClicked}
            onRedClicked={this._handleRedClicked}
            onYellowClicked={this._handleYellowClicked}
