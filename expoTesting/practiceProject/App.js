@@ -24,12 +24,18 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       number: 1,
-      color: 'green',
+      color: "red",
     }
     this.plusOne = this.plusOne.bind(this);
+    this.randColor = this.randColor.bind(this);
   }
   plusOne(){
     this.setState({number: this.state.number+=1})
+    this.randColor();
+  }
+
+  componentDidMount(){
+    this.randColor();
   }
 
   randColor(){
@@ -52,7 +58,7 @@ export default class App extends React.Component {
         <Test example='Test'/>
         <Test example='Wow'/>
         <Text>{this.state.number}</Text>
-        <Button color="red" title="I'm a Button!" onPress={this.plusOne}/>
+        <Button color={this.state.color} title="I'm a Button!" onPress={this.plusOne}/>
       </View>
     );
   }
@@ -64,7 +70,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: this.state,
+    backgroundColor: 'gray',
     alignItems: 'center',
     justifyContent: 'flex-start',
     marginTop:'50%',

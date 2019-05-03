@@ -9,3 +9,4 @@
 |10:00am|Continue reading Expo documentation.|
 |10:45am|Begin work on practice React app, following tutorial from React Native documentation|
 |11-12|Added custom component to react native app that displays differently depending on props passed to it, added state (a number) and a button that updates that state by incrementing it by one.|
+|12:30pm|Begin work on Simon Says app|
