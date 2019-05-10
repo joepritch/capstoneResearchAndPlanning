@@ -23,11 +23,13 @@ export default class App extends React.Component {
   }
 
   componentDidMount(){
-    setInterval(() => (
-      this.setState(previousState => (
-        {PossibleScore: Math.floor((this.state.PossibleScore)/2) }
-      ))
-    ), 500);
+    setInterval(this.scoreTick,500);
+  }
+
+  scoreTick(){
+    console.log(this.state.PossibleScore);
+    var newPossibleScore = Math.floor(this.state.PossibleScore/2);
+    this.setState({PossibleScore: newPossibleScore});
   }
 
   _handleBlueClicked(){
