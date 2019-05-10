@@ -22,9 +22,26 @@ Day 2
 |8:00am-8:30am|Refactor possible score timer|
 |8:30am-9:45am|Research React Native game engines and frameworks|
 
+## Component Structure
+  App
+   -Splash
+   -Game
+    -Screen
+    -Score
+    -Controls
+    -Mini game 1
+     -Mini game 1 components
+    -Mini game 2
+     -Mini game 2 components
+    -Mini game 3
+     -mini game 3 components
+    etc
+
 ## App formatting
 
   The UI of the app will be split into three main components; The 'screen' at the top, the players score bar in the middle that acts also as a visual divider, and the controls at the bottom that change depending on which mini game the user is playing.
+
+  After each mini game, the 'screen' component will return to a sort of 'default' state, until the next game is started. During this period of time, the controls at the bottom of the screen will grey out while wiaitng for the next game to start.
 
 
 ## Mini-Game Ideas
