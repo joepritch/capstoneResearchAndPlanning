@@ -21,3 +21,19 @@ Day 2
 |---|-----------|
 |8:00am-8:30am|Refactor possible score timer|
 |8:30am-9:45am|Research React Native game engines and frameworks|
+
+
+## Mini-Game Ideas
+
+* Simon says/color match
+* Micro Minesweeper
+* Mini Puzzle
+* Speed tapping
+* Flappy bird
+* Timing game
+* Typing game
+* Crane game
+* Maze game
+* Arkanoid game
+* Galaga/Space invaders
+* Balancing game
