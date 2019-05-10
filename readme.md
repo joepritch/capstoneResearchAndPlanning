@@ -15,3 +15,9 @@
 |2:00pm|Simon Says is technically fully-playable, UI needs an overhaul, code is messy and needs refactoring, planning to add a high-score feature, also planning to overhaul the scoring system so that you get more points the faster you react, and can run out of time to react|
 |3:00pm|Simon says UI overhauled|
 |4:00pm|Scoring system reworked, longer reaction times = less points earned|
+
+Day 2
+|Time|Work/Research done|
+|---|-----------|
+|8:00am-8:30am|Refactor possible score timer|
+|8:30am-9:45am|Research React Native game engines and frameworks|
