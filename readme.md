@@ -17,10 +17,17 @@
 |4:00pm|Scoring system reworked, longer reaction times = less points earned|
 
 Day 2
+
 |Time|Work/Research done|
 |---|-----------|
 |8:00am-8:30am|Refactor possible score timer|
 |8:30am-9:45am|Research React Native game engines and frameworks|
+|9:45am-11:00am|Create basic sketch of app UI|
+|11:00am-12:00pm|Plan component structure and create component diagram|
+|12:00pm-1:00pm|Research API's in react native (motion sensors among others) and brainstorm possible mini-game ideas|
+|1:00pm-2:00pm|Refactor component planning and UI sketch|
+|2:00pm-3:30pm|Refine component diagram, continue further react native study|
+|3:30pm-4:30pm|Update sketch, diagram, and readme|
 
 ## Component Structure
   App
