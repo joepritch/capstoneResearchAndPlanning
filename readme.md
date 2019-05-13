@@ -29,27 +29,19 @@ Day 2
 |2:00pm-3:30pm|Refine component diagram, continue further react native study|
 |3:30pm-4:30pm|Update sketch, diagram, and readme|
 
-## Component Structure
-  App
-   -Splash
-   -Game
-    -Screen
-    -Score
-    -Controls
-    -Mini game 1
-     -Mini game 1 components
-    -Mini game 2
-     -Mini game 2 components
-    -Mini game 3
-     -mini game 3 components
-    etc
+## User Needs
 
-## App formatting
+  a tutorial
+  difficulty modes
+  rewards for playing
+  To be able to pause at any point
+  to be able to quit at any point
 
-  The UI of the app will be split into three main components; The 'screen' at the top, the players score bar in the middle that acts also as a visual divider, and the controls at the bottom that change depending on which mini game the user is playing.
+## Component Diagram and UI Sketch
 
-  After each mini game, the 'screen' component will return to a sort of 'default' state, until the next game is started. During this period of time, the controls at the bottom of the screen will grey out while wiaitng for the next game to start.
+<img src='./ComponentDiagram.png'/>
 
+<img src='./appSketch.png'/>
 
 ## Mini-Game Ideas
 
